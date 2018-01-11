@@ -1,0 +1,37 @@
+running clean
+'build/lib' does not exist -- can't clean it
+'build/bdist.macosx-10.12-x86_64' does not exist -- can't clean it
+'build/scripts-3.6' does not exist -- can't clean it
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+copying calcula.py -> build/lib
+installing to build/bdist.macosx-10.12-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.macosx-10.12-x86_64
+creating build/bdist.macosx-10.12-x86_64/wheel
+copying build/lib/calcula.py -> build/bdist.macosx-10.12-x86_64/wheel
+running install_egg_info
+running egg_info
+writing mentoring.egg-info/PKG-INFO
+writing dependency_links to mentoring.egg-info/dependency_links.txt
+writing namespace_packages to mentoring.egg-info/namespace_packages.txt
+writing top-level names to mentoring.egg-info/top_level.txt
+reading manifest file 'mentoring.egg-info/SOURCES.txt'
+writing manifest file 'mentoring.egg-info/SOURCES.txt'
+Copying mentoring.egg-info to build/bdist.macosx-10.12-x86_64/wheel/mentoring-1.0.dev0-py3.6.egg-info
+running install_scripts
+creating build/bdist.macosx-10.12-x86_64/wheel/mentoring-1.0.dev0.dist-info/WHEEL
+creating '/Users/fjorg1/Labs/mentoring/target/dist/mentoring-1.0.dev0/dist/mentoring-1.0.dev0-py3-none-any.whl' and adding '.' to it
+adding 'calcula.py'
+adding 'mentoring-1.0.dev0.dist-info/DESCRIPTION.rst'
+adding 'mentoring-1.0.dev0.dist-info/metadata.json'
+adding 'mentoring-1.0.dev0.dist-info/namespace_packages.txt'
+adding 'mentoring-1.0.dev0.dist-info/top_level.txt'
+adding 'mentoring-1.0.dev0.dist-info/zip-safe'
+adding 'mentoring-1.0.dev0.dist-info/WHEEL'
+adding 'mentoring-1.0.dev0.dist-info/METADATA'
+adding 'mentoring-1.0.dev0.dist-info/RECORD'

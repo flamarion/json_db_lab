@@ -1,0 +1,34 @@
+{
+  "module_names": [
+    {
+      "branches": 0,
+      "branches_missing": 0,
+      "branches_partial": 0,
+      "coverage": 83.33333333333333,
+      "lines": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        15,
+        16,
+        18,
+        19
+      ],
+      "lines_not_covered": [
+        16,
+        19
+      ],
+      "module": "calcula",
+      "sum_lines": 12,
+      "sum_lines_not_covered": 2
+    }
+  ],
+  "overall_branch_coverage": 100,
+  "overall_branch_partial_coverage": 100,
+  "overall_coverage": 83.33333333333333
+}

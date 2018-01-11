@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="calcula_tests.TestSoma-20180111215504" skipped="0" tests="4" time="0.000">
+	<testcase classname="calcula_tests.TestSoma" name="test_multiplica_4_2" time="0.000"/>
+	<testcase classname="calcula_tests.TestSoma" name="test_soma_2_2" time="0.000"/>
+	<testcase classname="calcula_tests.TestSoma" name="teste_multiplica_2_3" time="0.000"/>
+	<testcase classname="calcula_tests.TestSoma" name="teste_soma_3_3_fail" time="0.000"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
