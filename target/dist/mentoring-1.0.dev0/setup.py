@@ -30,7 +30,7 @@ if __name__ == '__main__':
         scripts = [],
         packages = [],
         namespace_packages = [],
-        py_modules=[
+        py_modules = [
             'calcula',
             'json_cabuloso'
         ],

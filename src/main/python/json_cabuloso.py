@@ -1,9 +1,9 @@
 import base64
 import ast
 
-''' 
-This class will decrypt the file content and replace the key equal 'flamarion' by 'lucio'
-It receive a json file with content encrypted using base64 
+'''
+This class will decrypt the file content and replace key_replacement by lucio
+It receive a json file with content encrypted using base64
 '''
 
 
