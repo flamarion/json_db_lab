@@ -1,5 +1,14 @@
 {
-  "errors": [],
+  "errors": [
+    {
+      "test": "json_cabuloso_tests.TestKeyReplace.test_replace_flamarion_lucio" ,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/fjorg1/Labs/mentoring/src/unittest/python/json_cabuloso_tests.py\", line 10, in test_replace_flamarion_lucio\n    result = i.change_json()\n  File \"/Users/fjorg1/Labs/mentoring/src/main/python/json_cabuloso.py\", line 18, in change_json\n    with open(self.file, 'r') as f:\nFileNotFoundError: [Errno 2] No such file or directory: 'test1.json'\n"
+    } ,
+    {
+      "test": "json_cabuloso_tests.TestKeyReplace.test_replace_key_not_found" ,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/fjorg1/Labs/mentoring/src/unittest/python/json_cabuloso_tests.py\", line 15, in test_replace_key_not_found\n    result = i.change_json()\n  File \"/Users/fjorg1/Labs/mentoring/src/main/python/json_cabuloso.py\", line 18, in change_json\n    with open(self.file, 'r') as f:\nFileNotFoundError: [Errno 2] No such file or directory: 'test2.json'\n"
+    }
+  ] ,
   "failures": [],
-  "tests-run": 4
+  "tests-run": 6
 }

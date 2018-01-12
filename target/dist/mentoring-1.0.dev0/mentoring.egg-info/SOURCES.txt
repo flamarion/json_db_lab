@@ -1,8 +1,0 @@
-calcula.py
-setup.py
-mentoring.egg-info/PKG-INFO
-mentoring.egg-info/SOURCES.txt
-mentoring.egg-info/dependency_links.txt
-mentoring.egg-info/namespace_packages.txt
-mentoring.egg-info/top_level.txt
-mentoring.egg-info/zip-safe

@@ -11,9 +11,3 @@ class Calcula(object):
 
     def multiplica(self):
         return self.a * self.b
-
-    def subtrai(self):
-        return self.a - self.b
-
-    def divide(self):
-        return self.a / self.b
