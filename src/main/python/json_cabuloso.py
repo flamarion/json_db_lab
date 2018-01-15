@@ -2,9 +2,25 @@ import base64
 import json
 
 '''
-This class will decrypt the file content and replace key_replacement by lucio
-It receive a json file with content encrypted using base64
-eyAiYnVjZXRhIiA6ICJjdSIgfQ==
+This class accept 4 parameters
+1 - json file to bechanged ("sample.json" on example)
+2 - new json file to be created ("novo.json" on the example)
+3 - key to be replaced ("buceta" on the example)
+4 - key to replace ("caceta" on the example)
+
+The content of the "sample.json" is
+
+eyAiYnVjZXRhIiA6ICJjdSIgfQ== ( {"buceta" : "cu" })
+
+Example:
+
+If you want to replace "buceta" by "caceta":
+
+x = JsonCabuloso("sample.json", "novo.json", "buceta", "caceta")
+b = (x.read_json())
+x.change_json(b)
+
+
 '''
 
 
@@ -40,8 +56,3 @@ class JsonCabuloso:
             with open(self.new_file, 'w') as f:
                 f.write(encoded_json)
                 return encoded_json
-
-
-x = JsonCabuloso("sample.json", "novo_json", "buceta", "caceta")
-b = (x.read_json())
-print(x.change_json(b))
