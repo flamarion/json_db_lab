@@ -11,16 +11,25 @@ class JsonCabuloso:
         self.decoded_json = json.loads(utils._base64ToString(utils._read(self.sample_file)))
 
     def add(self, new_key, new_value):
-        self.decoded_json[new_key] = new_value
+        if new_key in self.decoded_json:
+            raise KeyError
+        else:
+            self.decoded_json[new_key] = new_value
 
     def delete(self, key):
         self.decoded_json.pop(key)
 
     def change(self, key, new_value):
-        self.decoded_json[key] = new_value
+        if key in self.decoded_json:
+            self.decoded_json[key] = new_value
+        else:
+            raise KeyError
 
     def query(self, key):
-        return key, self.decoded_json[key]
+        if key not in self.decoded_json:
+            raise KeyError
+        else:
+            return key, self.decoded_json[key]
 
     def retrieveAll(self):
         return self.decoded_json

@@ -13,7 +13,6 @@ def _stringToBase64(some_string):
     encoded_string = byte_array.decode("utf-8")
     return encoded_string
 
-
 def _read(sample_file):
     with open(sample_file, 'r') as f:
         json_string = f.read()
