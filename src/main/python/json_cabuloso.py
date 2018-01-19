@@ -14,24 +14,13 @@ class JsonCabuloso:
         self.decoded_json[new_key] = new_value
 
     def delete(self, key):
-        if key not in self.decoded_json:
-            return False
-        else:
-            self.decoded_json.pop(key)
-            return True
+        self.decoded_json.pop(key)
 
     def change(self, key, new_value):
-        if key not in self.decoded_json:
-            return False
-        else:
-            self.decoded_json[key] = new_value
-            return True
+        self.decoded_json[key] = new_value
 
-    def retrieve(self, key):
-        if key not in self.decoded_json:
-            return False
-        else:
-            return key, self.decoded_json[key]
+    def query(self, key):
+        return key, self.decoded_json[key]
 
     def retrieveAll(self):
         return self.decoded_json
