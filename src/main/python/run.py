@@ -52,7 +52,6 @@ def main(args):
     else:
         return False
 
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Json Cabuloso", prog='run.py')
     group = parser.add_mutually_exclusive_group(required=True)
