@@ -1,5 +1,5 @@
 import unittest
-from json_cabuloso import JsonCabuloso
+from json_db import JsonCabuloso
 
 
 class TestJsonCabuloso(unittest.TestCase):

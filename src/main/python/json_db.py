@@ -4,30 +4,38 @@ import json
 import utils
 
 
-class JsonCabuloso:
+class MyException(Exception):
+    pass
+
+
+class JsonDbHandler(object):
 
     def __init__(self, sample_file):
         self.sample_file = sample_file
-        self.decoded_json = json.loads(utils._base64ToString(utils._read(self.sample_file)))
+        self.decoded_json = json.loads(utils._base64ToString(
+            utils._read(self.sample_file)))
 
     def add(self, new_key, new_value):
         if new_key in self.decoded_json:
-            raise KeyError
+            raise MyException('The key already exists')
         else:
             self.decoded_json[new_key] = new_value
 
     def delete(self, key):
-        self.decoded_json.pop(key)
+        if key not in self.decoded_json:
+            raise MyException('Key not found for deletion')
+        else:
+            self.decoded_json.pop(key)
 
     def change(self, key, new_value):
         if key in self.decoded_json:
             self.decoded_json[key] = new_value
         else:
-            raise KeyError
+            raise MyException("Key not found for changing")
 
     def query(self, key):
         if key not in self.decoded_json:
-            raise KeyError
+            raise MyException('Key not found')
         else:
             return key, self.decoded_json[key]
 
