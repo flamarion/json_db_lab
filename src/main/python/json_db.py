@@ -42,12 +42,10 @@ class JsonDbHandler(object):
     def retrieve_all(self):
         return self.decoded_json
 
-    def save(self):
+    def save(self, file=None):
+        print(file)
+        if file is None:
+            file = self.sample_file
         encoded_json = utils._stringToBase64(json.dumps(self.decoded_json))
-        with open(self.sample_file, 'w') as f:
-            f.write(encoded_json)
-
-    def save_as(self, new_file):
-        encoded_json = utils._stringToBase64(json.dumps(self.decoded_json))
-        with open(new_file, 'w') as f:
+        with open(file, 'w') as f:
             f.write(encoded_json)

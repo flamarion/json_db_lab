@@ -2,7 +2,6 @@
 
 from json_db import JsonDbHandler, MyException
 import argparse
-import os
 
 
 def main(args):
@@ -12,12 +11,12 @@ def main(args):
     if args.add:
         if args.output:
             op.add(args.add[0], args.add[1])
-            op.save_as(args.output)
+            op.save(args.output)
             print("Key added to file {file}".format(file=args.output))
         else:
             try:
                 op.add(args.add[0], args.add[1])
-                op.save()
+                op.save(None)
                 print("Key added successfully")
             except MyException as e:
                 print(e)
